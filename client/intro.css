@@ -1,0 +1,85 @@
+:root 
+{
+    --background-color: #ffffff;
+    --txt-color: #ffffff;
+    --margin: 5px;
+    --padding: 5px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html
+{
+    font-family: "Cairo", sans-serif;
+    text-transform: uppercase;
+}
+body
+{
+    width: 100%;
+}
+::-webkit-scrollbar{
+    width: 0.7rem;
+}
+::-webkit-scrollbar-track
+{
+    background-image: linear-gradient(to top, #ffffff,#2d928f);
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #2d928f;
+    border-radius: 2%;
+}
+/* mandatory */
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #2d928f; 
+    box-shadow: 10px 0px 10px rgba(0, 0, 150, 0.5);
+    position: fixed;
+    width: 100%;
+    transform: 0.5s;
+}
+.header div,
+.header .links a {
+  width: calc(100% / 15);
+  height: 40px;
+  padding: var(--padding);
+  margin: var(--margin);
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    color: white;
+}
+.header .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+}
+.header .links a {
+    margin-right: 10px;
+    color: white;
+}
+.header .links a:hover
+{
+    background-color: #23706c;
+}
+.header .links a.active
+{
+    background-color: #23706c;
+}
